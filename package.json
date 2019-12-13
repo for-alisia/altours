@@ -1,0 +1,14 @@
+{
+    "name": "altour",
+    "version": "1.0.0",
+    "description": "Landing Page For Tours Agency",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Elena Romanova",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.13.0"
+    }
+}
