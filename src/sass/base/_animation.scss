@@ -44,10 +44,10 @@
 
 @keyframes scaleIn {
     0% {
-        background-size: 100%;
+        transform: scale(1);
     }
 
     100% {
-        background-size: 130%;
+        transform: scale(1.3);
     }
 }

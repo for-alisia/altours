@@ -27,6 +27,11 @@ body {
             letter-spacing: 1rem;
             font-size: 5rem;
         }
+
+        @include respond(small-phone) {
+            letter-spacing: 0.7rem;
+            font-size: 3.5rem;
+        }
     }
 
     &--sub {
@@ -39,6 +44,11 @@ body {
         @include respond(phone) {
             letter-spacing: 0.5rem;
         }
+
+        @include respond(small-phone) {
+            font-size: 1.5rem;
+            letter-spacing: 0.3rem;
+        }
     }
 }
 
@@ -48,14 +58,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     display: inline-block;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(
-        to right,
-        $color-primary-light,
-        $color-primary-dark
-    );
+    color: $color-primary;
     transition: all 0.2s;
+
+    @supports (-webkit-background-clip: text) or (background-clip: text) {
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(
+            to right,
+            $color-primary-light,
+            $color-primary-dark
+        );
+    }
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -63,6 +77,7 @@ body {
 
     @include respond(phone) {
         font-size: 2.5rem;
+        letter-spacing: 1px;
     }
 
     &:hover {
@@ -82,5 +97,16 @@ body {
     font-size: 1.6rem;
     &:not(:last-child) {
         margin-bottom: 3rem;
+    }
+}
+
+.link--green {
+    color: $color-primary;
+    transition: color 0.2s ease;
+    text-decoration: none;
+
+    &:visited,
+    &:hover {
+        color: $color-primary-dark;
     }
 }

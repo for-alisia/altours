@@ -9,12 +9,14 @@ const sass = require('gulp-sass');
 const pug = require('gulp-pug');
 const imagemin = require('gulp-imagemin');
 const imgCompress = require('imagemin-jpeg-recompress');
+const concatCss = require('gulp-concat-css');
 
 let isDev = true;
 let isProd = !isDev;
 
 const conf = {
     dest: './build',
+    source: './src',
     usePug: false
 };
 
@@ -44,35 +46,48 @@ let webpackConfig = {
 function html() {
     if (conf.usePug === true) {
         return gulp
-            .src('./src/index.pug')
+            .src(conf.source + '/index.pug')
             .pipe(pug())
             .pipe(gulp.dest('./build'))
             .pipe(browserSync.stream());
     }
 
     return gulp
-        .src('./src/index.html')
+        .src(conf.source + '/index.html')
         .pipe(gulp.dest('./build'))
         .pipe(browserSync.stream());
 }
 
 function styles() {
     return gulp
-        .src('./src/sass/**/*.scss')
+        .src(conf.source + '/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(conf.source + '/css'))
+        .pipe(browserSync.stream());
+}
+
+function allStyles() {
+    return gulp
+        .src(conf.source + '/css/**/*.css')
+        .pipe(concatCss('./main.css'))
         .pipe(
             autoprefixer({
                 cascade: false
             })
         )
         .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
-        .pipe(gulp.dest(conf.dest + '/css'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(conf.dest + '/css'));
+}
+
+function fonts() {
+    return gulp
+        .src(conf.source + '/fonts/**/*')
+        .pipe(gulp.dest(conf.dest + '/fonts'));
 }
 
 function scripts() {
     return gulp
-        .src('./src/js/main.js')
+        .src(conf.source + '/js/main.js')
         .pipe(webpack(webpackConfig))
         .pipe(gulp.dest(conf.dest + '/js'))
         .pipe(browserSync.stream());
@@ -80,7 +95,7 @@ function scripts() {
 
 function images() {
     return gulp
-        .src('./src/img/**/*')
+        .src(conf.source + '/img/**/*')
         .pipe(
             imagemin([
                 imgCompress({
@@ -104,22 +119,27 @@ function watch() {
         }
     });
 
-    gulp.watch('./src/sass/**/*.scss', styles);
-    gulp.watch('./src/js/**/*.js', scripts);
-    gulp.watch('./src/**/*.pug', html);
-    gulp.watch('./src/index.html', html);
+    gulp.watch(conf.source + '/sass/**/*.scss', gulp.series(styles, allStyles));
+    gulp.watch(conf.source + '/js/**/*.js', scripts);
+
+    if (conf.usePug) {
+        gulp.watch(conf.source + '/**/*.pug', html);
+    } else {
+        gulp.watch(conf.source + '/index.html', html);
+    }
 }
 
 function clean() {
     return del(['build/*']);
 }
 
-gulp.task('styles', styles);
-gulp.task('scripts', scripts);
-
 gulp.task('watch', watch);
 
-let build = gulp.series(clean, gulp.parallel(html, styles, scripts, images));
+let build = gulp.series(
+    clean,
+    gulp.parallel(html, styles, scripts, images, fonts),
+    allStyles
+);
 
 gulp.task('build', build);
 

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="icon-font.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="shortcut icon" href="./img/favicon.png" />
         <title>
@@ -25,24 +24,25 @@
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>01</span></span>About Natours</a>
+                        <a href="#" class="navigation__link"><span>01</span></span>О нашей компании</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>02</span></span>Your benefits</a>
+                        <a href="#" class="navigation__link"><span>02</span></span>Почему Алтай</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>03</span></span>Popular tours</a>
+                        <a href="#" class="navigation__link"><span>03</span></span>Популярные туры</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>04</span></span>Stories</a>
+                        <a href="#" class="navigation__link"><span>04</span></span>Отзывы об отдыхе</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link"><span>05</span></span>Book now</a>
+                        <a href="#" class="navigation__link"><span>05</span></span>Забронируйте тур</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <header class="header">
+            
             <div class="header__logo-box">
                 <img
                     src="./img/logo-white.png"
@@ -52,13 +52,13 @@
             </div>
             <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">Outdoors</span>
+                    <span class="heading-primary--main">Впечатления</span>
                     <span class="heading-primary--sub"
-                        >is where life happens</span
+                        >которые дарит сама природа</span
                     >
                 </h1>
                 <a href="#section-tours" class="btn btn--white btn--animated"
-                    >Discover our tours</a
+                    >Посмотреть наши туры</a
                 >
             </div>
         </header>
@@ -66,48 +66,33 @@
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Exciting tours for adventurous people
+                        Незабываемые впечатления для активного отдыха
                     </h2>
                 </div>
                 <div class="row">
                     <div class="col-1-of-2">
                         <h3 class="heading-tertiary u-margin-bottom-small">
-                            You are going to fall in love with nature
+                            Откройте для себя красоты Алтая
                         </h3>
                         <p class="paragraph">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus, repellat atque. Possimus
-                            asperiores, doloremque iusto non tenetur cupiditate
-                            perferendis commodi. Est dolor blanditiis qui?
-                            Expedita repellendus ratione iure illo quidem.
+                            Мы предлагаем уникальную возможность увидеть красоты Алтайского края своими глазами. На протяжении всего путешествия вас будет сопровождать команда профессиональных гидов.
                         </p>
                         <h3 class="heading-tertiary u-margin-bottom-small">
-                            Live adventures like you never have before
+                            Ощутите невероятное единение с природой
                         </h3>
                         <p class="paragraph">
-                            Consectetur adipisicing elit. Omnis sint saepe sed
-                            iusto corporis incidunt reprehenderit voluptatibus
-                            laborum eveniet quasi!
+                            Невероятные пейзажи, чистый воздух, горы и реки — мы уверены, что вы привезете домой огромное количество великолепных фото и незабываемые впечатления.
                         </p>
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
+                        <a href="#" class="btn-text">Больше фотографий &rarr;</a>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img
-                                src="img/nat-1-large.jpg"
-                                alt="Photo_1"
-                                class="composition__photo composition__photo--p1"
-                            />
-                            <img
-                                src="img/nat-2-large.jpg"
-                                alt="Photo-2"
-                                class="composition__photo composition__photo--p2"
-                            />
-                            <img
-                                src="img/nat-3-large.jpg"
-                                alt="Photo-3"
-                                class="composition__photo composition__photo--p3"
-                            />
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 900px) 22vw, (max-width: 600px) 31vw, 320px" alt="Photo_1" class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" sizes="(max-width: 900px) 22vw, (max-width: 600px) 31vw, 320px" alt="Photo_2" class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 900px) 22vw, (max-width: 600px) 31vw, 320px" alt="Photo_3" class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
+                            
                         </div>
                     </div>
                 </div>
@@ -118,12 +103,10 @@
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Explore the world
+                                Откройте для себя Алтай
                             </h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Accusantium quia aliquam saepe
-                                quidem consequuntur.
+                                Насладитесь красотами, от которых захватывает дух
                             </p>
                         </div>
                     </div>
@@ -131,12 +114,10 @@
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-compass"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Meet nature
+                                Единение с природой
                             </h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Accusantium quia aliquam saepe
-                                quidem consequuntur.
+                                Исследуйте загадочную природу во всем ее великолепии
                             </p>
                         </div>
                     </div>
@@ -144,12 +125,10 @@
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Find the way
+                                Польза для души и тела
                             </h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Accusantium quia aliquam saepe
-                                quidem consequuntur.
+                                Почувствуйте энергию природы, свежего воздуха и пеших прогулок
                             </p>
                         </div>
                     </div>
@@ -157,12 +136,10 @@
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-heart"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Live the full life
+                                Незабываемые впечатления 
                             </h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Accusantium quia aliquam saepe
-                                quidem consequuntur.
+                               Насладитесь купанием в кристалльно чистой воде, катанием на лошадях  
                             </p>
                         </div>
                     </div>
@@ -171,12 +148,12 @@
             <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Most popular tours
+                        Популярные туры
                     </h2>
                 </div>
                 <div class="row">
                     <div class="col-1-of-3">
-                        <div class="card">
+                        <div class="card" id="firstMeeting">
                             <div class="card__side card__side--front">
                                 <div class="card__picture card__picture--1">
                                     &nbsp;
@@ -184,16 +161,16 @@
                                 <h4 class="card__heading">
                                     <span
                                         class="card__heading-span card__heading-span--1"
-                                        >The sea explorer</span
+                                        >Первое знакомство</span
                                     >
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>3 day tour</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: very easy</li>
+                                        <li>Трехдневный тур</li>
+                                        <li>Максимум 10 человек</li>
+                                        <li>2 профессиональных гида</li>
+                                        <li>Ночевки в лесных домиках</li>
+                                        <li>Сложность: низкая</li>
                                     </ul>
                                 </div>
                             </div>
@@ -202,18 +179,18 @@
                             >
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$297</p>
+                                        <p class="card__price-only">Всего</p>
+                                        <p class="card__price-value">9990 </p>
                                     </div>
                                     <a href="#popup" class="btn btn--white"
-                                        >Buy now</a
+                                        >Подробнее</a
                                     >
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-1-of-3">
-                        <div class="card">
+                        <div class="card" id="explorer">
                             <div class="card__side card__side--front">
                                 <div class="card__picture card__picture--2">
                                     &nbsp;
@@ -221,16 +198,16 @@
                                 <h4 class="card__heading">
                                     <span
                                         class="card__heading-span card__heading-span--2"
-                                        >The forest hiker</span
+                                        >Упорный исследователь</span
                                     >
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>7 day tour</li>
-                                        <li>Up to 40 people</li>
-                                        <li>6 tour guides</li>
-                                        <li>Sleep in provided tents</li>
-                                        <li>Difficulty: medium</li>
+                                        <li>Семидневный тур</li>
+                                        <li>Максимум 20 человек</li>
+                                        <li>4 профессиональных гида</li>
+                                        <li>Ночевки в палатках и домиках</li>
+                                        <li>Сложность: средняя</li>
                                     </ul>
                                 </div>
                             </div>
@@ -239,11 +216,11 @@
                             >
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$897</p>
+                                        <p class="card__price-only">Всего</p>
+                                        <p class="card__price-value">19990</p>
                                     </div>
                                     <a href="#popup" class="btn btn--white"
-                                        >Buy now</a
+                                        >Подробнее</a
                                     >
                                 </div>
                             </div>
@@ -258,16 +235,16 @@
                                 <h4 class="card__heading">
                                     <span
                                         class="card__heading-span card__heading-span--3"
-                                        >The snow adventure</span
+                                        >Горное приключение</span
                                     >
                                 </h4>
                                 <div class="card__details">
                                     <ul>
-                                        <li>5 day tour</li>
-                                        <li>Up to 15 people</li>
-                                        <li>3 tour guides</li>
-                                        <li>Sleep in provided tents</li>
-                                        <li>Difficulty: hard</li>
+                                        <li>Пятидневный тур</li>
+                                        <li>Максимум 6 человек</li>
+                                        <li>2 профессиональных гида</li>
+                                        <li>Ночевки в палатках</li>
+                                        <li>Сложность: высокая</li>
                                     </ul>
                                 </div>
                             </div>
@@ -276,33 +253,146 @@
                             >
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$1097</p>
+                                        <p class="card__price-only">Всего</p>
+                                        <p class="card__price-value">21990</p>
                                     </div>
                                     <a href="#popup" class="btn btn--white"
-                                        >Buy now</a
+                                        >Подробнее</a
                                     >
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--green">Discover all tours</a>
+                <div class="row more-tours" id="moreToursBlock">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--4">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span
+                                        class="card__heading-span card__heading-span--4"
+                                        >Путешествие верхом</span
+                                    >
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Пятидневный тур</li>
+                                        <li>Максимум 9 человек</li>
+                                        <li>3 профессиональных гида</li>
+                                        <li>Ночевки в палатках</li>
+                                        <li>Сложность: средняя</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="card__side  card__side--back  card__side--back--4"
+                            >
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Всего</p>
+                                        <p class="card__price-value">34990 </p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white"
+                                        >Подробнее</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--5">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span
+                                        class="card__heading-span card__heading-span--5"
+                                        >Отпуск на Алтае</span
+                                    >
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Десятидневный тур</li>
+                                        <li>Максимум 12 человек</li>
+                                        <li>2 профессиональных гида</li>
+                                        <li>Ночевки в палатках и домиках</li>
+                                        <li>Сложность: низкая</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="card__side  card__side--back  card__side--back--5"
+                            >
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Всего</p>
+                                        <p class="card__price-value">39990</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white"
+                                        >Подробнее</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--6">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span
+                                        class="card__heading-span card__heading-span--6"
+                                        >Единение с природой</span
+                                    >
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Любая длительность</li>
+                                        <li>Индивидуальный тур</li>
+                                        <li>1 профессиональный гид</li>
+                                        <li>Ночевки в домиках</li>
+                                        <li>Сложность: очень низкая</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="card__side  card__side--back  card__side--back--6"
+                            >
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">От</p>
+                                        <p class="card__price-value">19990</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white"
+                                        >Подробнее</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-medium">
+                    <a href="#" class="btn btn--green" id="showMoreTours">Смотреть все туры</a>
                 </div>
             </section>
 
             <section class="section-stories">
                 <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
+                    <video class="bg-video__content" autoplay muted loop >
                         <source src="img/video.mp4" type="video/mp4" />
-                        <source src="img/video.webm" type="video/webm" />
-                        Your browser is not supported!
+                        Ваш браузер не поддерживает вопроизведение видео
                     </video>
+                    <img src="./img/video-cover.jpg" alt="Nature__bg" class="bg-video__content-cover">
                 </div>
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        We make people genuinely happy
+                        Мы делаем людей счастливыми
                     </h2>
                 </div>
                 <div class="row">
@@ -314,21 +404,15 @@
                                 class="story__image"
                             />
                             <figcaption class="story__caption">
-                                Mary Smith
+                                Анна Коваленко
                             </figcaption>
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                I had the best week ever with my family
+                                Великолепный отпуск и куча впечатлений
                             </h3>
                             <p>
-                                Dolor sit amet, consectetur adipisicing elit.
-                                Laudantium aliquid ex et cumque officiis
-                                voluptate nemo quia tempore adipisci ipsum
-                                necessitatibus quis, laborum nobis modi mollitia
-                                odio aut fugit quod neque iusto praesentium
-                                recusandae totam velit quae. Maxime, illo
-                                deserunt.
+                                Мой молодой человек уговорил меня поехать на Алтай в наш первый отпуск. Сначала я сомневалась, но в итоге получила огромное количество положительных эмоций! Это отличный способ остаться наедине друг с другом и природой. Столько позитива и крутых фоток!
                             </p>
                         </div>
                     </div>
@@ -342,27 +426,21 @@
                                 class="story__image"
                             />
                             <figcaption class="story__caption">
-                                Jack Willson
+                                Андрей Ливаненко
                             </figcaption>
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                My life is completely different now
+                                Отличный отдых для активных людей
                             </h3>
                             <p>
-                                Dolor sit amet, consectetur adipisicing elit.
-                                Laudantium aliquid ex et cumque officiis
-                                voluptate nemo quia tempore adipisci ipsum
-                                necessitatibus quis, laborum nobis modi mollitia
-                                odio aut fugit quod neque iusto praesentium
-                                recusandae totam velit quae. Maxime, illo
-                                deserunt.
+                                Не люблю весь отпуск проводить лежа на диване или на пляже. Поэтому решил попробовать что-то новое и необычное. Ни разу не пожалел — огромное количество впечатлений. Понравилось, как ребята все организовали, гиды отличные, хороший инветарь, все на твердую пятерку.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
+                    <a href="#" class="btn-text">Посмотреть другие отзывы &rarr;</a>
                 </div>
             </section>
             <section class="section-book">
@@ -372,26 +450,26 @@
                             <form action="#" class="form">
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
-                                        Start booking now
+                                        Забронируйте отдых уже сейчас
                                     </h2>
                                 </div>
                                 <div class="form__group">
                                     <input
                                         type="text"
                                         class="form__input"
-                                        placeholder="Full Name"
+                                        placeholder="Ваше имя"
                                         required
                                         id="name"
                                     />
                                     <label for="name" class="form__label"
-                                        >Full Name</label
+                                        >Ваше имя</label
                                     >
                                 </div>
                                 <div class="form__group">
                                     <input
                                         type="email"
                                         class="form__input"
-                                        placeholder="Email Address"
+                                        placeholder="Email"
                                         required
                                         id="email"
                                     />
@@ -413,7 +491,7 @@
                                             ><span
                                                 class="form__radio-button"
                                             ></span>
-                                            Small tour group</label
+                                            Индивидуальный</label
                                         >
                                     </div>
                                     <div class="form__radio-group">
@@ -430,7 +508,7 @@
                                             <span
                                                 class="form__radio-button"
                                             ></span>
-                                            Large tour group</label
+                                            Групповой тур</label
                                         >
                                     </div>
                                 </div>
@@ -438,7 +516,7 @@
                                     class="form__group u-margin-top-medium u-margin-bottom-small"
                                 >
                                     <button class="btn btn--green">
-                                        Next step &rarr;
+                                        Забронировать
                                     </button>
                                 </div>
                             </form>
@@ -448,62 +526,139 @@
             </section>
         </main>
         <footer class="footer">
+            
+
             <div class="footer__logo-box">
-                <img
-                    src="img/logo-green-2x.png"
-                    alt="Logo"
-                    class="footer__logo"
-                />
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x " media="(max-width: 37.5rem)">
+                    <img
+                        srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+                        alt="Logo" src="img/logo-green-1x.png"
+                    />
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="#" class="footer__link">Company</a>
+                                <a href="#" class="footer__link">О компании</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link">Contact us</a>
+                                <a href="#" class="footer__link">Свяжитесь с нами</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link">Carrers</a>
+                                <a href="#" class="footer__link">Наши туры</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="footer__link"
-                                    >Privacy policy</a
+                                    >Фотографии</a
                                 >
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Terms</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by
-                        <a href="#" class="footer__link">Elena Romano</a>.
-                        Copyright &copy; by Elena Romano. Designed by Jonas
-                        Shmedtmann.
+                        Natours, отдых на Алтае. Разработано &copy;
+                        <a href="#" class="footer__link">Alekir design</a> 2019 год
                     </p>
                 </div>
             </div>
         </footer>
         <div class="popup" id="popup">
             <div class="popup__content">
+                <div class="popup__form-content">
+                    <form action="#" class="form popup__form-booking">
+                        <h2 class="heading-secondary">
+                                Бронирование тура
+                        </h2>
+                        
+                        <div class="form__group">
+                            <input
+                                type="text"
+                                class="form__input"
+                                placeholder="Ваше имя"
+                                required
+                                id="nameTour"
+                            />
+                            <label for="nameTour" class="form__label"
+                                >Ваше имя</label
+                            >
+                        </div>
+                        <div class="form__group">
+                            <input
+                                type="tel"
+                                class="form__input"
+                                placeholder="Телефон"
+                                required
+                                id="phone"
+                            />
+                            <label for="phone" class="form__label"
+                                >Телефон</label
+                            >
+                        </div>
+                        <div class="form__group">
+                            <input
+                                type="checkbox"
+                                class="form__checkbox-input"
+                                required
+                                id="privatePolicy"
+                                checked
+                            />
+                            <label for="privatePolicy" class="form__checkbox-label"
+                                >
+                                <span                     class="form__checkbox-button"></span>
+                                Я согласен с <a href="#" target="_blank" class="link--green">политикой обработки персональных данных</a></label
+                            >
+                        </div>
+                        <button class="btn btn--green" id="popupBookTour">Забронировать</button>
+                    </form>
+                </div>
                 <div class="popup__left">
-                    <img src="./img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                    <img src="./img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                    <img src="./img/nat-11.jpg" alt="Tour photo" class="popup__img">
+                    <img src="./img/nat-12.jpg" alt="Tour photo" class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-                    <p class="popup__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quos voluptatem laudantium necessitatibus sunt, molestiae accusamus facilis eveniet unde nostrum porro quidem aut quas ipsum minus illo nulla! Fugit sunt quas, earum quasi nobis omnis hic nisi facere voluptatibus unde enim non vel magnam ex tempore est harum! Hic unde corrupti maiores animi earum delectus rerum? Fugit saepe, delectus tempora obcaecati nihil magni, ea debitis fugiat deserunt quo nam ipsa minima voluptatem hic velit consequuntur, numquam voluptate qui! Ipsum, tenetur?</p>
-                    <a href="#" class="btn btn--green">Book now</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Навстречу приключениям</h2>
+                    <p class="popup__text">Ваше путешествие начнется в г.Барнаул, откуда мы обеспечим комфортный трансфер к начальной точке нашего маршрута. Рекомендуем взять с собой теплые вещи и лекарства, принимаемые вами регулярно, репеллент от насекомых, удобную обувь и хорошее настроение. Маршрут путешествия продуман до мелочей, чтобы показать вам самые красивые места Алтая.</p>
+                    <ul class="popup__list">
+                        <li class="popup__item">5 дней</li>
+                        <li class="popup__item">2 гида</li>
+                        <li class="popup__item">Ночевки в домиках</li>
+                        <li class="popup__item">Рыбалка</li>
+                        <li class="popup__item">19 990 руб.</li>
+                    </ul>
+                    <form class="popup__form form">
+                        <div class="form__group">
+                            <div class="form__radio-group">
+                                <input
+                                    type="radio"
+                                    class="form__radio-input"
+                                    id="date1"
+                                    name="date"
+                                />
+                                <label
+                                    for="date1"
+                                    class="form__radio-label"
+                                    ><span
+                                        class="form__radio-button"
+                                    ></span>
+                                    С 23.06 по 28.06<span class="popup__date-detail">Осталось 3 места</span></label
+                                >
+                            </div>                            
+                        </div>
+                    </form>
+                    <div class="popup__links">
+                        <a href="#" class="btn btn--green" id="nextTourStep">Следующий шаг</a>
+                        <a href="#" class="btn-text popup__text-link" target="_blank" id="routeLink">Подробное описание &rarr;</a>
+                    </div>                    
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
 

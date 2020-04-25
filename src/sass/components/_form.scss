@@ -12,6 +12,10 @@
         color: inherit;
         transition: all 0.3s ease;
 
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -50,6 +54,11 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {
@@ -91,5 +100,50 @@
 
     &__radio-input:checked ~ &__radio-label &__radio-button::after {
         opacity: 1;
+    }
+
+    &__checkbox-input {
+        display: none;
+    }
+
+    &__checkbox-label {
+        font-size: 1.4rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 2.2rem;
+    }
+
+    &__checkbox-button {
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 3px solid $color-primary;
+        border-radius: 3px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0.2rem;
+
+        &::after {
+            content: '';
+            height: 0.8rem;
+            width: 0.6rem;
+            display: block;
+            position: absolute;
+            top: -1px;
+            left: 20%;
+            border: solid $color-white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+    }
+
+    &__checkbox-input:checked ~ &__checkbox-label &__checkbox-button {
+        background-color: $color-primary;
+
+        &::after {
+            opacity: 1;
+        }
     }
 }

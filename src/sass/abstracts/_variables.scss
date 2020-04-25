@@ -1,8 +1,11 @@
 // Colors
 // Green Pallet
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+// $color-primary: #55c57a;
+// $color-primary-light: #7ed56f;
+// $color-primary-dark: #28b485;
+$color-primary: #39a770;
+$color-primary-light: #39c95d;
+$color-primary-dark: #08614e;
 
 // Black&White
 $color-white: #fff;
@@ -23,10 +26,23 @@ $color-secondary-light: #ffb900;
 $color-tertiary: #5643fa;
 $color-tertiary-light: #2998ff;
 
+//Violet Pallet
+$color-violet: #9a2ab1;
+$color-violet-light: #d039ee;
+
+// Red Pallet
+$color-red: #be283c;
+$color-red-light: #f3475e;
+
+//
+$color-lilac: #069286;
+$color-lilac-light: #48e6d8;
+
 // Font
 $default-font-size: 1.6rem;
 
 // Grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;

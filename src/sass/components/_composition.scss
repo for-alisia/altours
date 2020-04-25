@@ -8,32 +8,70 @@
         position: absolute;
         z-index: 10;
         transition: all 0.2s ease-in;
-        outline-offset: 1.8rem;
+
+        @supports (outline-offset: 1.8rem) {
+            outline-offset: 1.8rem;
+        }
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+        }
 
         &--p1 {
             top: -2rem;
             left: 0;
+
+            @include respond(tab-port) {
+                top: 0;
+                transform: scale(1.2);
+            }
         }
 
         &--p2 {
             top: 2rem;
             right: 0;
+            @include respond(tab-port) {
+                top: -1rem;
+                transform: scale(1.2);
+                z-index: 100;
+            }
         }
 
         &--p3 {
             left: 20%;
             top: 12rem;
+
+            @include respond(tab-port) {
+                top: 1rem;
+                left: 0;
+                transform: scale(1.2);
+            }
         }
 
         &:hover {
-            outline: 1.1rem solid $color-primary;
             transform: scale(1.05) translateY(-0.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
             z-index: 20;
+
+            @supports (outline-offset: 1.8rem) {
+                outline: 1.1rem solid $color-primary;
+            }
+
+            @include respond(tab-port) {
+                outline: none;
+                transform: scale(1.4) translateY(-0.5rem);
+            }
         }
     }
 
     &:hover &__photo:not(:hover) {
         transform: scale(0.93);
+
+        @include respond(tab-port) {
+            transform: scale(1.2);
+        }
     }
 }
