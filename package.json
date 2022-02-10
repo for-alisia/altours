@@ -27,7 +27,7 @@
         "gulp.spritesmith": "^6.11.0",
         "imagemin-jpeg-recompress": "^6.0.0",
         "merge-stream": "^2.0.0",
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "pug": "^2.0.4",
         "vinyl-buffer": "^1.0.1",
         "webpack-stream": "^5.2.1"
